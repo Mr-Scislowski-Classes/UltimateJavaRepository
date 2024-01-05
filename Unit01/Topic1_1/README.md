@@ -16,3 +16,18 @@ java Unit01.Topic1_1.Main
 ```
 
 Sorry about the more complicated syntax for running the code from the command line; it's a necessary Java thing if you're going to keep your code organized in a big repository like this.
+
+## Video 1
+Multi line comments start with "/*" and end with "*/"
+You have to declare "public class Main" at the start of a Java program (Main is replaced with whatever the name of the file is)
+You have to declare a main method, in which the code actually takes place. "public static void main(String[] args) {}"
+System.out displays something in the console
+System.out.print prints a string to the console, and waits at the end of that line
+System.out.println prints a string to the console, and then moves on to the next line
+## Video 2
+String literals are phrases, words, etc. enclosed in double quotes
+Syntax errors are things that return errors, like missing a semicolon
+Logic errors are issues that return incorrect output, like adding numbers incorrectly
+## Video 3
+Exception errors are issues like dividing by zero
+Java is very finicky
