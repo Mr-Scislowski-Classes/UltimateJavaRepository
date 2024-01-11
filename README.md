@@ -63,6 +63,8 @@ To learn how to do fancy formatting using Markdown, see [here](https://github.co
 
 ### Sync-ing my updates (to assignments / calendars / etc)
 
+- "source control" tab on left, three dots, "Fetch", then choose upstream
 - "source control" tab on left, three dots, "Pull, push" > "Pull from..."
 - select "origin/upstream" from the dropdown palette
+- select the "main" branch
 - "source control" tab on left, three dots, "Pull, push" > "Sync"
