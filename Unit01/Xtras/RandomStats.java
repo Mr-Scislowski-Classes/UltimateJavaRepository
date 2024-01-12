@@ -12,7 +12,8 @@ public class RandomStats {
         System.out.println(fourthNum);
          double fifthNum = (double) (Math.random());
         System.out.println(fifthNum);
-        // Math.min(Math.min(Math.min(a, b), c), d)
+        System.out.println("Min: " + Math.min(Math.min(Math.min(Math.min(firstNum, secondNum), thirdNum), fourthNum), fifthNum));
+        System.out.println("Max: " + Math.max(Math.max(Math.max(Math.max(firstNum, secondNum), thirdNum), fourthNum), fifthNum));
         // System.out.println("Min: " + Math.min(firstNum, secondNum, thirdNum, fourthNum, fifthNum));
         // System.out.println("Max: " + Math.max(firstNum, secondNum, thirdNum, fourthNum, fifthNum));
         System.out.println("Average: " + (firstNum + secondNum + thirdNum + fourthNum + fifthNum)/5);
