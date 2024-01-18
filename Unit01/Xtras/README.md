@@ -20,10 +20,6 @@ java Unit01.Xtras.RandomInt 2 7
 
 ## Exercises
 
-1. `TriangleSides`
-
-   Write a program that takes three positive integers as command-line arguments and prints `false` if any one of them is greater than or equal to the sum of the other two and `true` otherwise. (Note: This computation tests whether the three numbers could be the lengths of the sides of some triangle.)
-
 1. `DistanceFormula`
 
    Write a program that takes four integer command-line arguments `x1`, `y1`, `x2`, and `y2` and prints the distance between the points (`x1`, `y1`) and (`x2`, `y2`) using the [distance formula](https://www.geogebra.org/resource/ndGhcZzg/AgiboXtqEj8nyKmf/material-ndGhcZzg.png)
