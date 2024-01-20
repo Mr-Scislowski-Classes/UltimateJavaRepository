@@ -31,6 +31,7 @@
 - 1.3 Expressions and Assignment Statements
 - 1.4 Compound Assignment Operators
 - 1.5 Casting and Ranges of Variables
+- Xtras: Command Line Arguments
 
 ### Unit 2 - Using Objects
 
@@ -43,6 +44,14 @@
 - 2.7 String Methods
 - 2.8 Wrapper Classes - Integer and Double
 - 2.9 Using the Math Class
+- Xtras: 
+    - `Scanner` for user input
+    - GUI calculator with JavaFX or Swing?
+    - Java2D API for doing basic shapes etc
+    - `java.time` for dates and times
+    - `java.awt.Color` for colors and `java.awt.Font` for fonts
+    - `java.awt.geom` for shapes
+    - `java.net.URL` and `java.net.URI` for URLs
 
 ## Course Calendar
 
