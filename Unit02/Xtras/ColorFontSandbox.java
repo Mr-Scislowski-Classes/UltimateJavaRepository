@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Arrays;
+
 
 public class ColorFontSandbox extends JPanel {
 
@@ -7,6 +9,8 @@ public class ColorFontSandbox extends JPanel {
         super.paintComponent(g);
         // Set color
 
+        String[] availableFonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+        System.out.println(Arrays.toString(availableFonts));
 
         Font f1 = new Font("Arial", Font.BOLD, 24);
         
