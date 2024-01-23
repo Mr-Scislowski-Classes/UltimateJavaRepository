@@ -24,7 +24,6 @@ ideas:
     - lengthOfFirstWord
     - getFirstWord
     - same with first sentence
-
     - we could get character & word count & line count & sentence count using `countMatches`
 
 ## String Utils
@@ -33,7 +32,7 @@ ideas:
 
 - isPalindrome (checks whether the reverse of a string is the same as the original; needs .equal)
 - PrintBanner: use LeftPad/RightPad/Center/Repeat to make a nice looking banner message. maybe input a name, or a epitaph, or something funny like that... Also, trim it if it's an epitaph so it fits. Could integrate with JFrames later I guess...
-- Use [Levenshtein Distance](https://commons.apache.org/proper/commons-text/javadocs/api-release/org/apache/commons/text/similarity/LevenshteinDistance.html) and [Fuzzy Score](https://commons.apache.org/proper/commons-text/javadocs/api-release/org/apache/commons/text/similarity/FuzzyScore.html) to tell a user how close they are
+- Use [Levenshtein Distance](https://commons.apache.org/proper/commons-text/javadocs/api-release/org/apache/commons/text/similarity/LevenshteinDistance.html) and [Fuzzy Score](https://commons.apache.org/proper/commons-text/javadocs/api-release/org/apache/commons/text/similarity/FuzzyScore.html) to tell a user how close they are. Ask ChatGPT about other measures of text similarity, and what the applications for them are.
 
 ## Graphics - Fonts
 
