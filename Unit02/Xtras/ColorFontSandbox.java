@@ -12,7 +12,7 @@ public class ColorFontSandbox extends JPanel {
         String[] availableFonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
         System.out.println(Arrays.toString(availableFonts));
 
-        Font f1 = new Font("Arial", Font.BOLD, 24);
+        // Font f1 = new Font("Arial", Font.BOLD, 24);
         
 
 
