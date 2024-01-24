@@ -30,6 +30,14 @@
       - The first word in the text (words are separated by spaces)
       - The first sentence in the text (sentences are separated by periods)
 
+    Using the `Scanner` class, you can read multiple lines of text (until the user enters Ctrl-d) by using the following code:
+  
+      ```
+      scan.useDelimiter("\\Z");
+      scan.next();
+      ```
+
+
     Run these programs on the "Gettysburg Address" and "I Have a Dream" text files like so:
 
     ```
