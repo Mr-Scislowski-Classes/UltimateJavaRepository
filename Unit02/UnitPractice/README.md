@@ -1,6 +1,6 @@
 # Unit 2 Coding Practice
 
-These all use `String` methods in the Java Quick Reference, so are testable in the AP Exam. They are taken from [CodingBat](https://codingbat.com/java).
+These all use `String` methods in the Java Quick Reference, so are testable in the AP Exam. They are adapted from [CodingBat](https://codingbat.com/java).
 
 1. [helloName](https://codingbat.com/prob/p171896)
 
@@ -24,11 +24,10 @@ These all use `String` methods in the Java Quick Reference, so are testable in t
 
 1. [endsLy](https://codingbat.com/prob/p103895)
 
-   Given a string, return true if it ends in "ly".
+   Given a string of length 2 or longer, return true if it ends in "ly".
 
    ```
    endsLy("oddly") → true
-   endsLy("y") → false
    endsLy("oddy") → false
    ```
 
