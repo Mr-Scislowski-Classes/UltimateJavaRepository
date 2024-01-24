@@ -17,6 +17,7 @@ public class QuadraticSolver {
         double solution2 = (-b - Math.sqrt(b*b - 4 * a * c)) / (2 * a);
 
         System.out.println("Solutions are: " + solution1 + ", " + solution2);
+        scan.close();
 
     }
 }
