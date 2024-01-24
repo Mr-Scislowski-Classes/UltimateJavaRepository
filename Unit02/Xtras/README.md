@@ -38,10 +38,20 @@
       ```
 
 
-    Run these programs on the "Gettysburg Address" and "I Have a Dream" text files like so:
+    Run these programs on the "Gettysburg Address" and "I Have a Dream" text files to give output like:
 
     ```
     cat gettysburg.txt | java Unit02.Xtras.BasicTextAnalysis
+    ```
+    
+    To give something like:
+
+    ```
+    Enter your text: Your text is 1439 characters long.
+    The first word is: Four
+    The first sentence is: Four score and seven years ago our fathers brought forth on this
+    continent a new nation, conceived in liberty and dedicated to the
+    proposition that all men are created equal.
     ```
 
 
