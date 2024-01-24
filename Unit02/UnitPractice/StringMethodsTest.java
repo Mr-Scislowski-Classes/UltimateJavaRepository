@@ -7,7 +7,7 @@ class StringMethodsTest {
     @Test
     void helloName() {
         assertEquals("Hello Bella!", StringMethods.helloName("Bella"));
-        assertEquals("Hello John!", StringMethods.helloName("Joh"));
+        assertEquals("Hello John!", StringMethods.helloName("John"));
     }
 
     @Test
