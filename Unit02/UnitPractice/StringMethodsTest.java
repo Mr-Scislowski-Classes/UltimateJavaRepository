@@ -12,8 +12,8 @@ class StringMethodsTest {
 
     @Test
     void firstHalf() {
-        assertEquals("Hel", StringMethods.firstHalf("Hello"));
-        assertEquals("Wor", StringMethods.firstHalf("World"));
+        assertEquals("Ja", StringMethods.firstHalf("Java"));
+        assertEquals("AP ", StringMethods.firstHalf("AP CSA"));
     }
 
     @Test
@@ -31,13 +31,13 @@ class StringMethodsTest {
     @Test
     void withoutEnd() {
         assertEquals("ell", StringMethods.withoutEnd("Hello"));
-        assertEquals("orld", StringMethods.withoutEnd("World"));
+        assertEquals("orl", StringMethods.withoutEnd("World"));
     }
 
     @Test
     void nTwice() {
         assertEquals("Held", StringMethods.nTwice("Hello World", 2));
-        assertEquals("Wod", StringMethods.nTwice("World", 1));
+        assertEquals("Wd", StringMethods.nTwice("World", 1));
     }
 
     @Test
@@ -48,7 +48,7 @@ class StringMethodsTest {
 
     @Test
     void middleTwo() {
-        assertEquals("ll", StringMethods.middleTwo("Hello"));
-        assertEquals("or", StringMethods.middleTwo("World"));
+        assertEquals("av", StringMethods.middleTwo("Java"));
+        assertEquals(" C", StringMethods.middleTwo("AP CSA"));
     }
 }
