@@ -7,10 +7,9 @@ public class Main {
   }
   public static void main(String[] args){
       Main p1 = new Main();
-      p1.move("James", boolean, 5);
+      p1.move("James", true, 5);
 
       Main p2 = new Main();
-      p2.move()
     }
   }
   
