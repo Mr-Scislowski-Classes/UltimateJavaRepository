@@ -1,18 +1,41 @@
 
 ## Scanner
 
-- basic calculator (adding two numbers) - demo... also say their name so I'm reading strings, and reading ints.
-- quadratic formula solutions (prompt for a, b, c)
-- old discord handle generator (prompt for username, it'll append # and 4 random digits)
-- Tweet abbreviator (prompt for a tweet, it'll abbreviate it to 140 characters)
+### Demo
 
-TODO: other things using methods in Java Quick Reference (`length`, `substring/2`, `substring/1`, `indexOf`, `equals`, `compareTo`)
-ideas:
+1. [ScannerDemo.java](ScannerDemo.java)
 
-    - lengthOfFirstWord
-    - getFirstWord
-    - same with first sentence
-    - we could get character & word count & line count & sentence count using `countMatches`
+  Prompt the user for their name, then say hello to them. Then ask them to input two numbers they'd like to add together, then print the sum of those two numbers in a nice format.
+
+### Exercises
+
+1. [QuadraticSolver.java](QuadraticSolver.java)
+
+    Prompt the user for the coefficients of a quadratic equation (`a`, `b`, and `c` in the equation `a x^2 + b x + c = 0`), then print the two solutions to the equation. You can assume that the user will only input values that will result in two real solutions.
+
+    Some examples:
+
+    - The solutions to `2 x^2 + 9 x - 5 = 0` are `x = 0.5` and `x = -5`.
+
+    - The solutions to `x^2 - 2 x - 1` are `x = 1 + sqrt(2) = 2.414...` and `x = 1 - sqrt(2) = -0.414...`.
+
+1. [DiscordTagGenerator.java](DiscordTagGenerator.java)
+
+    Prompt the user for their desired username. Generate a random 4-digit number and append it to the end of their username with a "#" sign. Print the result. For example, a user named "Bob" might get the tag "Bob#8311".
+
+1. [BasicTextAnalysis.java](BasicTextAnalysis.java)
+
+    Prompt the user to type in some text. Print the following information about the text they entered:
+      - The number of characters in the text
+      - The first word in the text (words are separated by spaces)
+      - The first sentence in the text (sentences are separated by periods)
+
+    Run these programs on the "Gettysburg Address" and "I Have a Dream" text files like so:
+
+    ```
+    cat gettysburg.txt | java Unit02.Xtras.BasicTextAnalysis
+    ```
+
 
 ## String Utils
 
@@ -20,6 +43,11 @@ ideas:
 
 - isPalindrome (checks whether the reverse of a string is the same as the original; needs .equal)
 - PrintBanner: use LeftPad/RightPad/Center/Repeat to make a nice looking banner message. maybe input a name, or a epitaph, or something funny like that... Also, trim it if it's an epitaph so it fits. Could integrate with JFrames later I guess...
+- character count
+- word count / sentence count (`countMatches`)
+- line count...?
+          23     265    1440 Unit02/Xtras/gettysburg-address.txt
+          34    1686    9329 Unit02/Xtras/i-have-a-dream.txt
 - Use [Levenshtein Distance](https://commons.apache.org/proper/commons-text/javadocs/api-release/org/apache/commons/text/similarity/LevenshteinDistance.html) and [Fuzzy Score](https://commons.apache.org/proper/commons-text/javadocs/api-release/org/apache/commons/text/similarity/FuzzyScore.html) to tell a user how close they are. Ask ChatGPT about other measures of text similarity, and what the applications for them are.
 
 ## Graphics - Fonts
