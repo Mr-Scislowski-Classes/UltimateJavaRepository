@@ -31,52 +31,52 @@ These all use `String` methods in the Java Quick Reference, so are testable in t
    endsLy("oddy") → false
    ```
 
-- [makeAbba](https://codingbat.com/prob/p161056)
+1. [makeAbba](https://codingbat.com/prob/p161056)
 
-  Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
+   Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
 
-  ```
-  makeAbba("Hi", "Bye") → "HiByeByeHi"
-  makeAbba("Yo", "Alice") → "YoAliceAliceYo"
-  makeAbba("What", "Up") → "WhatUpUpWhat"
-  ```
+   ```
+   makeAbba("Hi", "Bye") → "HiByeByeHi"
+   makeAbba("Yo", "Alice") → "YoAliceAliceYo"
+   makeAbba("What", "Up") → "WhatUpUpWhat"
+   ```
 
-- [withoutEnd](https://codingbat.com/prob/p130896)
+1. [withoutEnd](https://codingbat.com/prob/p130896)
 
-  Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
+   Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
 
-  ```
-  withoutEnd("Hello") → "ell"
-  withoutEnd("java") → "av"
-  withoutEnd("coding") → "odin"
-  ```
+   ```
+   withoutEnd("Hello") → "ell"
+   withoutEnd("java") → "av"
+   withoutEnd("coding") → "odin"
+   ```
 
-- [nTwice](https://codingbat.com/prob/p174148)
+1. [nTwice](https://codingbat.com/prob/p174148)
 
-  Given a string and an int n, return a string made of the first and last n chars from the string. The string length will be at least n.
+   Given a string and an int n, return a string made of the first and last n chars from the string. The string length will be at least n.
 
-  ```
-  nTwice("Hello", 2) → "Helo"
-  nTwice("Chocolate", 3) → "Choate"
-  nTwice("Chocolate", 1) → "Ce"
-  ```
+   ```
+   nTwice("Hello", 2) → "Helo"
+   nTwice("Chocolate", 3) → "Choate"
+   nTwice("Chocolate", 1) → "Ce"
+   ```
 
-- [makeTags](https://codingbat.com/prob/p147483)
+1. [makeTags](https://codingbat.com/prob/p147483)
 
-  The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>".
+   The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>".
 
-  ```
-  makeTags("i", "Yay") → "<i>Yay</i>"
-  makeTags("i", "Hello") → "<i>Hello</i>"
-  makeTags("cite", "Yay") → "<cite>Yay</cite>"
-  ```
+   ```
+   makeTags("i", "Yay") → "<i>Yay</i>"
+   makeTags("i", "Hello") → "<i>Hello</i>"
+   makeTags("cite", "Yay") → "<cite>Yay</cite>"
+   ```
 
-- [middleTwo](https://codingbat.com/prob/p137729)
+1. [middleTwo](https://codingbat.com/prob/p137729)
 
-  Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2.
+   Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2.
 
-  ```
-  middleTwo("string") → "ri"
-  middleTwo("code") → "od"
-  middleTwo("Practice") → "ct"
-  ```
+   ```
+   middleTwo("string") → "ri"
+   middleTwo("code") → "od"
+   middleTwo("Practice") → "ct"
+   ```
