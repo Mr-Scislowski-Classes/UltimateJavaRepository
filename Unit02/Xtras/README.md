@@ -5,7 +5,7 @@
 
 1. [ScannerDemo.java](ScannerDemo.java)
 
-  Prompt the user for their name, then say hello to them. Then ask them to input two numbers they'd like to add together, then print the sum of those two numbers in a nice format.
+    Prompt the user for their name, then say hello to them. Then ask them to input two numbers they'd like to add together, then print the sum of those two numbers in a nice format.
 
 ### Exercises
 
