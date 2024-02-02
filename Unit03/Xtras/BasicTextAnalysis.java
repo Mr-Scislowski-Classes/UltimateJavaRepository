@@ -1,8 +1,26 @@
 package Unit03.Xtras;
+import java.util.Scanner;
 
 public class BasicTextAnalysis {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        scanner.useDelimiter("\\Z");
+        String text = scanner.next();
+        System.out.println("Length - " + text.length());
+        System.out.print("First word - ");
+        try {
+            System.out.println(text.substring(0, text.indexOf(" ")));
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println(text);
+        }
 
+        System.out.print("First sentence - ");
+        try {
+            System.out.println(text.substring(0, text.indexOf(".")));
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println(text);
+        }
+        scanner.close();
     }
 }
 
