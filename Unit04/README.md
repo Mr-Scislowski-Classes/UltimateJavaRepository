@@ -1,7 +1,12 @@
 # Unit 4 - Iteration
 
 ## 4.1 - `while` Loops
-
+while (control variable){
+    
+    statement 1
+    statement 2
+    adjust control variable
+}
 ## 4.2 - `for` Loops
 
 ## 4.3 - Developing Algorithms Using Strings
