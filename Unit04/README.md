@@ -11,6 +11,13 @@ No notes
 
 ## 4.2 - `for` Loops
 
+### Video 1
+You can use a for loop to iterate over something a specific number of times.
+### Video 2
+For loops are good for a defined number of iterations, while loops are better for more complex booleans
+### Video 3
+No notes
+
 ## 4.3 - Developing Algorithms Using Strings
 
 ## 4.4 - Nested Iteration
