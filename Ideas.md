@@ -1,0 +1,6 @@
+- GUI calculator with JavaFX or Swing?
+- Java2D API for doing basic shapes etc
+- `java.time` for dates and times
+- `java.awt.Color` for colors and `java.awt.Font` for fonts
+- `java.awt.geom` for shapes
+- `java.net.URL` and `java.net.URI` for URLs
