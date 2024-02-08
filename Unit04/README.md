@@ -8,7 +8,14 @@ while (control variable){
     adjust control variable
 }
 ## 4.2 - `for` Loops
+for (intitilzation, range, control variale){
 
+    statement 1
+    statement 2
+
+}
+
+careful with counting
 ## 4.3 - Developing Algorithms Using Strings
 
 ## 4.4 - Nested Iteration
