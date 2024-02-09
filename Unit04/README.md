@@ -20,6 +20,13 @@ No notes
 
 ## 4.3 - Developing Algorithms Using Strings
 
+### Video 1
+No notes
+### Video 2
+No notes
+### Video 3
+No notes
+
 ## 4.4 - Nested Iteration
 
 ## 4.5 - Informal Code Analysis
