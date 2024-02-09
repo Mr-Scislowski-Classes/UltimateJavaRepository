@@ -76,7 +76,7 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
 
 1. [`endOther`](https://codingbat.com/prob/p126880)
 
-    Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). In this exercise you may use the `toLowerCase` `String` method.
+    Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). In this exercise you may use the `toLowerCase` `String` method even though it's not in the Java Quick Reference.
 
     ```
     endOther('Hiabc', 'abc') → true
