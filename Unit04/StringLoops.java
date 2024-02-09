@@ -45,18 +45,39 @@ public class StringLoops {
     }
 
     public static String doubleChar(String str) {
-        return "";
+        String result = "";
+        for (int i = 0; i < str.length(); i++){
+            result += str.substring(i,i+1);
+            result += str.substring(i,i+1);
+        }
+        return result;
     }
 
     public static int countCode(String str) {
-        return 0;
+        int count = 0;
+        for (int i=0; i< str.length()-3; i++){
+            if (str.substring(i, i +2).equals("co") && str.substring(i+3, i+4).equals("e")){
+                count++;
+            }
+        }
+        return count;
     }
 
     public static boolean bobThere(String str) {
+        for (int i=0; i< str.length()-2; i++){
+            if (str.substring(i, i +1).equals("b") && str.substring(i+2, i+3).equals("b")){
+                return true;
+            }
+        }
         return false;
     }
 
     public static boolean prefixAgain(String str, int n) {
+        for (int i=0; i< str.length(); i++){
+            if (str.substring(i, i +1).equals(str.substring(n, n +1))){
+                return true;
+            }
+            }
         return false;
     }
 

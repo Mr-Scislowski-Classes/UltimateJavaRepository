@@ -16,7 +16,19 @@ for (intitilzation, range, control variale){
 }
 
 careful with counting
-## 4.3 - Developing Algorithms Using Strings
+## 4.3 - Developing Algorithms Using String
+
+String word = "{something}"
+int count = 0
+for (int i; i < word.length(); i++)
+{
+    String letter = word.substring(i,i+1)
+    if (letter.equals("a"))
+    {
+        count++
+    }
+}
+
 
 ## 4.4 - Nested Iteration
 
