@@ -29,9 +29,9 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.
 
     ```
-    bobThere('abcbob') → True
-    bobThere('b9b') → True
-    bobThere('bac') → False
+    bobThere('abcbob') → true
+    bobThere('b9b') → true
+    bobThere('bac') → false
     ```
 
 1. [`prefixAgain`](https://codingbat.com/prob/p136417)
@@ -39,9 +39,9 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string?
 
     ```
-    prefixAgain('abXYabc', 1) → True
-    prefixAgain('abXYabc', 2) → True
-    prefixAgain('abXYabc', 3) → False
+    prefixAgain('abXYabc', 1) → true
+    prefixAgain('abXYabc', 2) → true
+    prefixAgain('abXYabc', 3) → false
     ```
 
 1. [`sameStarChar`](https://codingbat.com/prob/p194491)
@@ -49,9 +49,9 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, they are the same.
 
     ```
-    sameStarChar('xy*yzz') → True
-    sameStarChar('xy*zzz') → False
-    sameStarChar('*xa*az') → True
+    sameStarChar('xy*yzz') → true
+    sameStarChar('xy*zzz') → false
+    sameStarChar('*xa*az') → true
     ```
 
 1. [`starOut`](https://codingbat.com/prob/p139564)
@@ -79,9 +79,9 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     Given two strings, return true if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). In this exercise you may use the `toLowerCase` `String` method.
 
     ```
-    endOther('Hiabc', 'abc') → True
-    endOther('AbC', 'HiaBc') → True
-    endOther('abc', 'abXabc') → True
+    endOther('Hiabc', 'abc') → true
+    endOther('AbC', 'HiaBc') → true
+    endOther('abc', 'abXabc') → true
     ```
 
 1. [`xyBalance`](https://codingbat.com/prob/p134250)
@@ -89,9 +89,9 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So "xxy" is balanced, but "xyx" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.
 
     ```
-    xyBalance('aaxbby') → True
-    xyBalance('aaxbb') → False
-    xyBalance('yaaxbb') → False
+    xyBalance('aaxbby') → true
+    xyBalance('aaxbb') → false
+    xyBalance('yaaxbb') → false
     ```
 
 1. [`plusOut`](https://codingbat.com/prob/p170829)
@@ -109,9 +109,9 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     Return true if the string "cat" and "dog" appear the same number of times in the given string.
 
     ```
-    catDog('catdog') → True
-    catDog('catcat') → False
-    catDog('1cat1cadodog') → True
+    catDog('catdog') → true
+    catDog('catcat') → false
+    catDog('1cat1cadodog') → true
     ```
 
 1. [`mixString`](https://codingbat.com/prob/p125185)
