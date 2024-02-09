@@ -54,7 +54,7 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     sameStarChar('*xa*az') → True
     ```
 
-1. [`starOut`](https://codingbat.com/prob/p170181)
+1. [`starOut`](https://codingbat.com/prob/p139564)
 
     Return a version of the given string, where for every star ("`*`") in the string the star and the chars immediately to its left and right are gone. So "`ab*cd`" yields "`ad`" and "`ab**cd`" also yields "`ad`".
 
@@ -114,7 +114,7 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     catDog('1cat1cadodog') → True
     ```
 
-1. [`mixString`](https://codingbat.com/prob/p197890)
+1. [`mixString`](https://codingbat.com/prob/p125185)
 
     Given two strings, a and b, create a bigger string made of the first char of a, the first char of b, the second char of a, the second char of b, and so on. Any leftover chars go at the end of the result.
 
@@ -124,7 +124,7 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
     mixString('xxxx', 'There') → 'xTxhxexre'
     ```
 
-1. [`repeatSeparator`](https://codingbat.com/prob/p109537)
+1. [`repeatSeparator`](https://codingbat.com/prob/p109637)
 
     Given two strings, word and a separator sep, return a big string made of count occurrences of the word, separated by the separator string.
 
