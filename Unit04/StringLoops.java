@@ -163,11 +163,13 @@ public class StringLoops {
     public static String repeatSeparator(String word, String sep, int count) {
         String result = "";
 
-        for (int i = 1; i < count; i++) {
-            result += word + sep;
+        for (int i = 1; i <= count; i++) {
+            result += word;
+            if (i != count) {
+                result += sep;
+            }
         }
 
-        result += word;
         return result;
     }
 }
