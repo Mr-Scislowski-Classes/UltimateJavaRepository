@@ -73,24 +73,47 @@ public class StringLoops {
     }
 
     public static boolean prefixAgain(String str, int n) {
-        for (int i=n; i< str.length-n(); i++){
-            if (str.substring(i, i +1).equals(str.substring(n, n +1))){
+        for (int i=n; i < str.length()-n+1; i++){
+            if (str.substring(i, i + n).equals(str.substring(0,n)))
                 return true;
-            }
             }
         return false;
     }
 
     public static boolean sameStarChar(String str) {
-        return false;
+
+        for (int i=1; i< str.length()-1; i++){
+            if(str.substring(i,i+1).equals("*") && !str.substring(i-1,i).equals(str.substring(i+1,i+2)))
+            return false;
+        }
+        return true;
     }
 
     public static String starOut(String str) {
-        return "";
-    }
+        String result = "";
+        int count = 0;
+        for (int i = 0; i < str.length(); i++){
+            if (str.substring(i,i+1).equals("*"))
+            count++;
+        }
+        if (count == 1){
+            for(int i=0; i <str.length();i++){
+                if (str.substring(i,i+1).equals("*")){
+                result = str.substring(0,i-1) + str.substring(i+1,str.length());
+            }
+            }
+        } else {
+            
+        return ""; 
 
     public static int countHi(String str) {
-        return 0;
+        int count = 0;
+        for (int i = 0; i < str.length()); i++){
+            if (str.substring(0,i+2).equals("hi")){
+            count++;
+            }
+        }
+        return count;
     }
 
     public static boolean endOther(String a, String b) {
