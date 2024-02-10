@@ -73,7 +73,7 @@ public class StringLoops {
     }
 
     public static boolean prefixAgain(String str, int n) {
-        for (int i=0; i< str.length(); i++){
+        for (int i=n; i< str.length-n(); i++){
             if (str.substring(i, i +1).equals(str.substring(n, n +1))){
                 return true;
             }
