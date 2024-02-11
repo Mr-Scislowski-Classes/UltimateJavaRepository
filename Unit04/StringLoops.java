@@ -132,20 +132,56 @@ public class StringLoops {
 
 
     public static boolean xyBalance(String str) {
-        return false;
-    }
+            for (int i = str.length() - 1; i >= 0; i--) {
+                if (str.charAt(i) == 'y') {
+                    return true;
+                } else if (str.charAt(i) == 'x') {
+                    return false;
+                }
+            }
+        
+            return true;
+        }
+        
 
     public static String plusOut(String str, String word) {
         return "";
     }
 
     public static boolean catDog(String str) {
-        return false;
-    }
+            int catcount = 0;
+            int dogcount = 0;
+            for (int i = 0; i < str.length() - 2; i++) {
+                if (str.substring(i, i + 3).equals("cat")) {
+                    catcount++;
+                }
+                if (str.substring(i, i + 3).equals("dog")) {
+                    dogcount++;
+                }
+            }
+            if (dogcount == catcount) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
 
     public static String mixString(String a, String b) {
-        return "";
-    }
+            String result = "";
+              for (int i = 0; i < a.length(); i++) {
+                  result += a.substring(i, i + 1);
+          
+                  for (int j = i; j < b.length(); j++) {
+                      result += b.substring(j, j + 1);
+                      break;  
+                  }
+              }
+            if (a.length() < b.length()){
+              result += b.substring(a.length());
+            }
+              return result;
+          }
 
     public static String repeatSeparator(String word, String sep, int count) {
         return "";
