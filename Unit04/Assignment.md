@@ -119,7 +119,7 @@ Given two strings, return true if either of the strings appears at the very end 
 endOther('Hiabc', 'abc') → true
 endOther('AbC', 'HiaBc') → true
 endOther('abc', 'abXabc') → true
-
+a
 ```
 
 1. [`xyBalance`](https://codingbat.com/prob/p134250)
