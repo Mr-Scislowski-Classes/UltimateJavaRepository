@@ -31,5 +31,5 @@ for (int i; i < word.length(); i++)
 
 
 ## 4.4 - Nested Iteration
-
+The outer loop only gets executed when the inner loop is finished
 ## 4.5 - Informal Code Analysis
