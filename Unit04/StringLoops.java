@@ -164,15 +164,19 @@ public class StringLoops {
     public static String plusOut(String str, String word) {
         String returned = "";
         for (int i = 0; i < str.length()-word.length()+1; i++) {
+            System.out.println("currently looking at index: " + i);
+            System.out.println("will stop at index: " + (str.length()-word.length()+1) );
             if (!str.substring(i, i + word.length()).equals(word)) {
                 returned += "+";
             } else {
                 returned += word;
                 i += word.length()-1;
-                returned += "+";
             }
         }
 
+        while (returned.length() < str.length()) {
+            returned += "+";
+        }
         return returned;
     }
 
