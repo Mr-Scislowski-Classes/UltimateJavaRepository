@@ -29,4 +29,18 @@ No notes
 
 ## 4.4 - Nested Iteration
 
+### Video 1
+Nested loops are when there is iteration inside of iteration.
+### Video 2
+No notes
+### Video 3
+No notes
+
 ## 4.5 - Informal Code Analysis
+
+### Video 1
+No notes
+### Video 2
+No notes
+### Video 3
+No notes

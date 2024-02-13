@@ -98,20 +98,24 @@ public class StringLoops {
 
     public static String starOut(String str) {
         String returned = "";
-        boolean skip = false;
         for (int i = 0; i < str.length(); i++) {
-            if (!skip) {
-                if (str.substring(i, i+1).equals("*")) {
-                    if (returned.length() != 0) {
-                        returned = returned.substring(0, returned.length()-1);
+            if (!str.substring(i, i+1).equals("*")) {
+                if (str.length() != 1) {
+                    if (i == 0) {
+                        if (!str.substring(i+1, i+2).equals("*")) {
+                            returned += str.substring(i, i+1);
+                        }
+                    } else if (i == str.length()-1) {
+                        if (!str.substring(i-1, i).equals("*")) {
+                            returned += str.substring(i, i+1);
+                        }
+                    } else {
+                        if (!str.substring(i+1, i+2).equals("*") && !str.substring(i-1, i).equals("*")) {
+                            returned += str.substring(i, i+1);
+                        }
                     }
-                    skip = true;
                 } else {
                     returned += str.substring(i, i+1);
-                }
-            } else {
-                if (!str.substring(i, i+1).equals("*")) {
-                    skip = false;
                 }
             }
         }
@@ -159,16 +163,16 @@ public class StringLoops {
 
     public static String plusOut(String str, String word) {
         String returned = "";
-        for (int i = 0; i < str.length()-word.length(); i++) {
-            if (!str.substring(i, i+word.length()).equals(word)) {
+        for (int i = 0; i < str.length()-word.length()+1; i++) {
+            if (!str.substring(i, i + word.length()).equals(word)) {
                 returned += "+";
             } else {
                 returned += word;
+                i += word.length()-1;
+                returned += "+";
             }
         }
-        if (!str.substring(str.length()-word.length(), str.length()-word.length()+1).equals(word)) {
-            returned += "+";
-        }
+
         return returned;
     }
 
