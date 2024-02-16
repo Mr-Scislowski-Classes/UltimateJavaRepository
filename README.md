@@ -62,6 +62,18 @@
 - [4.4 Nested Iteration](Unit04/Topic4_4NestedIteration.java)
 - [4.5 Informal Code Analysis](Unit04/Topic4_5InformalCodeAnalysis.java)
 
+### [Unit 5 - Writing Classes](Unit05/README.md)
+- [5.1 Anatomy of a Class](Unit05/Topic5_1AnatomyOfClass.java)
+- [5.2 Constructors](Unit05/Topic5_2Constructors.java)
+- [5.3 Documentation with Comments](Unit05/Topic5_3DocumentationWithComments.java)
+- [5.4 Accessor Methods](Unit05/Topic5_4AccessorMethods.java)
+- [5.5 Mutator Methods](Unit05/Topic5_5MutatorMethods.java)
+- [5.6 Writing Methods](Unit05/Topic5_6WritingMethods.java)
+- [5.7 Static Variables and Methods](Unit05/Topic5_7StaticVariablesAndMethods.java)
+- [5.8 Scope and Access](Unit05/Topic5_8ScopeAndAccess.java)
+- [5.9 this Keyword](Unit05/Topic5_9ThisKeyword.java)
+- [5.10 Ethical and Social Implications of Computing Systems](Unit05/Topic5_10EthicalAndSocialImplicationsOfComputingSystems.java)
+
 ## Course Calendar
 
 | Mon                                                                    | Tue                                                      | Wed                                                          | Thu                                                                | Fri                                                                   |
