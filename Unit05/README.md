@@ -18,8 +18,6 @@ No notes
 No notes
 ### Video 2
 No notes
-### Video 3
-No notes
 ## 5.4 - Accessor Methods
 ### Video 1
 
