@@ -24,9 +24,12 @@ a variable from a methods is not local to the other
 *
 */ to create javadoc
 ## 5.4 - Accessor Methods
-
+-must be public
+Return must mathc the type of the instance varialbe
+- public int getnum()
 ## 5.5 - Mutator Methods
-
+- to change the instance variable
+- it has to be void, since it would not return anything
 ## 5.6 - Writing Methods
 
 ## 5.7 - Static Variables and Methods
