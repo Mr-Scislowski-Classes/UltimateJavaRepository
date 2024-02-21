@@ -20,18 +20,14 @@ No notes
 No notes
 ## 5.4 - Accessor Methods
 ### Video 1
-
+Accessor methods are written methods that return an attribute of an object. (Why are they doing this instead of just saying, for exmaple "ball.x" to return the attribute x in an instance of a class named ball?)
 ### Video 2
-
-### Video 3
-
+No notes
 ## 5.5 - Mutator Methods
 ### Video 1
-
+No notes
 ### Video 2
-
-### Video 3
-
+No notes
 ## 5.6 - Writing Methods
 ### Video 1
 
