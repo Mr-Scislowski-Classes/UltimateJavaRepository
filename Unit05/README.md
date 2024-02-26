@@ -42,11 +42,9 @@ Static methods can only access static variables.
 Static variables are kept across all objects of a class.
 ## 5.8 - Scope and Access
 ### Video 1
-
+Method decomposition is dividing a problem into smaller problems
 ### Video 2
-
-### Video 3
-
+No notes
 ## 5.9 - `this` Keyword
 ### Video 1
 
