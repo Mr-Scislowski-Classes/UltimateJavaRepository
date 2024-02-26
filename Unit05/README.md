@@ -30,18 +30,16 @@ No notes
 No notes
 ## 5.6 - Writing Methods
 ### Video 1
-
+No notes
 ### Video 2
-
+No notes
 ### Video 3
-
+Making a variable equal another can create a pointer, where both are in the same memory location and change together.
 ## 5.7 - Static Variables and Methods
 ### Video 1
-
+Static methods can only access static variables.
 ### Video 2
-
-### Video 3
-
+Static variables are kept across all objects of a class.
 ## 5.8 - Scope and Access
 ### Video 1
 
