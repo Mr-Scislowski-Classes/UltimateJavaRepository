@@ -31,9 +31,11 @@ Return must mathc the type of the instance varialbe
 - to change the instance variable
 - it has to be void, since it would not return anything
 ## 5.6 - Writing Methods
+in the same class:  just object.variable;
+in a different class, but public method: object.method();
 
 ## 5.7 - Static Variables and Methods
-
+static gets access to static, non-static gets access to everything
 ## 5.8 - Scope and Access
 
 ## 5.9 - `this` Keyword
