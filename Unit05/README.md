@@ -47,11 +47,7 @@ Method decomposition is dividing a problem into smaller problems
 No notes
 ## 5.9 - `this` Keyword
 ### Video 1
-
-### Video 2
-
-### Video 3
-
+Using the "this" keyword before a attribute or as a parameter refers to the object that called the method.
 ## 5.10 - Ethical and Social Implications of Computing Systems
 ### Video 1
 
