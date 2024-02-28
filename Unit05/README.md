@@ -37,7 +37,8 @@ in a different class, but public method: object.method();
 ## 5.7 - Static Variables and Methods
 static gets access to static, non-static gets access to everything
 ## 5.8 - Scope and Access
-
+- Local variable can be declared in the body of constructors. Cannot take the parameter as the varible.
+- if we redeclared, it will be only in the method
 ## 5.9 - `this` Keyword
-
+- to distinguish between instance variable and parameter
 ## 5.10 - Ethical and Social Implications of Computing Systems
