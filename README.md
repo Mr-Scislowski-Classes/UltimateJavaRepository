@@ -75,6 +75,13 @@
 - [5.9 this Keyword](Unit05/Topic5_9ThisKeyword.java)
 - [5.10 Ethical and Social Implications of Computing Systems](Unit05/Topic5_10EthicalAndSocialImplicationsOfComputingSystems.java)
 
+### [Unit 6 - Array](Unit06/README.md)
+
+- [6.1 - Array Creation and Access](Unit06/Topic6_1ArrayCreationAndAccess.java)
+- [6.2 - Traversing Arrays](Unit06/Topic6_2TraversingArrays.java)
+- [6.3 - Enhanced for Loop for Arrays](Unit06/Topic6_3EnhancedForLoopForArrays.java)
+- [6.4 - Developing Algorithms Using Arrays](Unit06/Topic6_4DevelopingAlgorithmsUsingArrays.java)
+
 ## Course Calendar
 
 | Mon                                                                    | Tue                                                                                    | Wed                                                          | Thu                                                                | Fri                                                                   |
