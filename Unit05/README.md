@@ -51,3 +51,4 @@ Using the "this" keyword before a attribute or as a parameter refers to the obje
 ## 5.10 - Ethical and Social Implications of Computing Systems
 ### Video 1
 No notes
+ 
