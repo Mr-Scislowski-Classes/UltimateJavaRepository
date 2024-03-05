@@ -42,3 +42,4 @@ static gets access to static, non-static gets access to everything
 ## 5.9 - `this` Keyword
 - to distinguish between instance variable and parameter
 ## 5.10 - Ethical and Social Implications of Computing Systems
+I already know this
