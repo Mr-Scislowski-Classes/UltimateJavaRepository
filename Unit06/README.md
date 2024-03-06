@@ -9,5 +9,26 @@ length of array is final
 
 off by one, always < list.kength>
 ## 6.3 - Enhanced for Loop for Arrays
+Declare an array
 
+int [] something = {num1, num2, num3, num4};
+
+for (int number: something)
+{
+    System.out.println(number);
+}
+
+String word
+
+(method) current
 ## 6.4 - Developing Algorithms Using Arrays
+private int findMin(int [] values){
+    int min = Interger.MAX_VALUE;
+    for (int currentValue: Values)
+{
+    if (currentValue < min>){
+        min = currentValue;
+    }
+}
+    return min;
+}
