@@ -23,5 +23,7 @@ public class GettingStarted {
         LevenshteinDetailedDistance l1 = new LevenshteinDetailedDistance();
         System.out.println("The Levenshtein Distance between '" + first + "' and '" + second + "' is: "
                 + l1.apply(first, second).getDistance());
+
+        scanner.close();
     }
 }
