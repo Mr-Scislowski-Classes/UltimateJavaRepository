@@ -6,7 +6,7 @@ There are many ways to measure how similar two pieces of text are. In this assig
 
 1. `GettingStarted.java`
 
-Write a program that uses `Scanner` and asks the use to type in two words. It should then display the `FuzzyScore` between those two words, and the `LevenshteinDistance` between those two words.
+Write a program that uses `Scanner` and asks the use to type in two words. It should then display the Fuzzy score between those two words, and the Levenshtein distance between those two words.
 
 For example:
 
@@ -20,3 +20,5 @@ The Levenshtein Distance between 'participate' and 'articulate' is: 3
 ```
 
 2. `UsingDictionary.java`
+
+Write a program that uses `Scanner` and asks the user to type in a word. It should calculate the Fuzzy score and LevenshteinDistance between each word in the dictionary and the word itself, and display the top three matches for each.
