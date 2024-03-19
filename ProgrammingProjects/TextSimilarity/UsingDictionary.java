@@ -13,7 +13,7 @@ import org.apache.commons.text.similarity.LevenshteinDetailedDistance;
 
 public class UsingDictionary {
     public static void main(String[] args) throws IOException {
-        Reader reader = new FileReader("ProgrammingProjects/TextSimilarity/popular.txt");
+        Reader reader = new FileReader("ProgrammingProjects/TextSimilarity/words.txt");
         BufferedReader br = new BufferedReader(reader);
 
         Scanner s = new Scanner(System.in);
@@ -37,12 +37,13 @@ public class UsingDictionary {
                     bestFuzzyScore = fuzz.fuzzyScore(targetWord, currentWord);
                 }
 
-                // if (levenshtein.apply(targetWord, currentWord).getDistance() < bestDistance)
-                // {
-                // levenshteinWinner = currentWord;
-                // bestDistance = levenshtein.apply(targetWord, currentWord).getDistance();
-                // }
+                if (levenshtein.apply(targetWord, currentWord).getDistance() < bestDistance) {
+                    levenshteinWinner = currentWord;
+                    bestDistance = levenshtein.apply(targetWord, currentWord).getDistance();
+                }
             }
+            currentWord = br.readLine();
+
         }
 
         reader.close();
