@@ -1,10 +1,10 @@
 package ProgrammingProjects.TextSimilarity;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -12,6 +12,23 @@ import org.apache.commons.text.similarity.FuzzyScore;
 import org.apache.commons.text.similarity.LevenshteinDetailedDistance;
 
 public class UsingDictionary {
+
+    public static String[] getEnglishWords() {
+        ArrayList<String> words = new ArrayList<String>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader("ProgrammingProjects/TextSimilarity/words.txt"))) {
+            String curLine;
+            while ((curLine = br.readLine()) != null) {
+                words.add(curLine);
+            }
+        } catch (IOException e) {
+            System.out.println("Exception occurred");
+            System.err.println(e);
+        }
+        return (String[]) words.toArray();
+
+    }
+
     public static void main(String[] args) throws IOException {
         Reader reader = new FileReader("ProgrammingProjects/TextSimilarity/words.txt");
         BufferedReader br = new BufferedReader(reader);
