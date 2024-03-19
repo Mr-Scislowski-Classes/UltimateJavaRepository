@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class UsingDictionary {
 
@@ -25,15 +23,6 @@ public class UsingDictionary {
     }
 
     public static void main(String[] args) {
-        String[] words = getEnglishWords();
-
-        Scanner s = new Scanner(System.in);
-        System.out.println("Please enter your word");
-        String targetWord = s.nextLine();
-        s.close();
-
-        System.out.println(Arrays.toString(Utils.getTopFuzzyMatches(words, targetWord, 3)));
-        System.out.println(Arrays.toString(Utils.getTopLevenshteinMatches(words, targetWord, 3)));
-
+        // Your code here
     }
 }
