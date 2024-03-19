@@ -21,4 +21,23 @@ The Levenshtein Distance between 'participate' and 'articulate' is: 3
 
 2. `UsingDictionary.java`
 
-Write a program that uses `Scanner` and asks the user to type in a word. It should calculate the Fuzzy score and LevenshteinDistance between each word in the dictionary and the word itself, and display the top three matches for each.
+Write a program that uses `Scanner` and asks the user to type in a word. It should calculate the Fuzzy score and LevenshteinDistance between each word in the dictionary (which you can load using the `getEnglishWords` method provided) and the word itself. Display the best fuzzy score match, and the best Levenshtein distance match.
+
+For example:
+
+```
+Please enter your word:
+edep
+Closest word using fuzzy algorithm was: depart
+Closest word using Levenshtein algorithm was: adept
+```
+
+3. `ChooseFont.java`
+
+You can get an array of all the fonts available to Java's graphics environment using:
+
+```java
+String[] allFonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+```
+
+Display all the fonts available to the user, and ask them to type a font name. They shouldn't have to spell the font name perfectly with matching spaces and case etc. Based on what they typed in, show them the top 3 fonts that match the text they typed in.

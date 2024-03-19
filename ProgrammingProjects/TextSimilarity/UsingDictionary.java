@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -25,49 +26,98 @@ public class UsingDictionary {
             System.out.println("Exception occurred");
             System.err.println(e);
         }
-        return (String[]) words.toArray();
+        return words.toArray(new String[0]);
+    }
+
+    public static int fuzzyScore(String w1, String w2) {
+        FuzzyScore fuzz = new FuzzyScore(Locale.getDefault());
+        return fuzz.fuzzyScore(w1, w2);
+    }
+
+    public static int levenshteinDistance(String w1, String w2) {
+        return new LevenshteinDetailedDistance().apply(w1, w2).getDistance();
 
     }
 
-    public static void main(String[] args) throws IOException {
-        Reader reader = new FileReader("ProgrammingProjects/TextSimilarity/words.txt");
-        BufferedReader br = new BufferedReader(reader);
+    public static String[] getTopFuzzyMatches(String[] dictionary, String target, int num) {
+        String[] winners = new String[num];
+        for (int i = 0; i < winners.length; i++) {
+            winners[i] = dictionary[0];
+        }
+
+        for (String curWord : dictionary) {
+            for (int winnerIdx = 0; winnerIdx < winners.length; winnerIdx++) {
+                if (fuzzyScore(curWord, target) > fuzzyScore(winners[winnerIdx], target)) {
+                    for (int j = winnerIdx; j < winners.length - 1; j++) {
+                        winners[j + 1] = winners[j];
+                    }
+                    winners[winnerIdx] = curWord;
+                    break;
+                }
+            }
+        }
+
+        return winners;
+    }
+
+    public static String[] getTopLevenshteinMatches(String[] dictionary, String target, int num) {
+        String[] winners = new String[num];
+        for (int i = 0; i < winners.length; i++) {
+            winners[i] = dictionary[0];
+        }
+
+        for (String curWord : dictionary) {
+            for (int winnerIdx = 0; winnerIdx < winners.length; winnerIdx++) {
+                if (levenshteinDistance(curWord, target) < levenshteinDistance(winners[winnerIdx], target)) {
+                    for (int j = winnerIdx; j < winners.length - 1; j++) {
+                        winners[j + 1] = winners[j];
+                    }
+                    winners[winnerIdx] = curWord;
+                    break;
+                }
+            }
+        }
+
+        return winners;
+    }
+
+    public static void main(String[] args) {
+        String[] words = getEnglishWords();
 
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter your word");
         String targetWord = s.nextLine();
         s.close();
 
-        int bestFuzzyScore = -1;
-        String fuzzyWinner = "";
-        int bestDistance = Integer.MAX_VALUE;
-        String levenshteinWinner = "";
+        // int bestFuzzyScore = -1;
+        // String fuzzyWinner = "";
+        // int bestDistance = Integer.MAX_VALUE;
+        // String levenshteinWinner = "";
 
-        FuzzyScore fuzz = new FuzzyScore(Locale.getDefault());
-        LevenshteinDetailedDistance levenshtein = new LevenshteinDetailedDistance();
+        // FuzzyScore fuzz = new FuzzyScore(Locale.getDefault());
+        // LevenshteinDetailedDistance levenshtein = new LevenshteinDetailedDistance();
 
-        String currentWord = br.readLine();
-        while (currentWord != null) {
-            if (!currentWord.equals(targetWord)) {
-                if (fuzz.fuzzyScore(targetWord, currentWord) > bestFuzzyScore) {
-                    fuzzyWinner = currentWord;
-                    bestFuzzyScore = fuzz.fuzzyScore(targetWord, currentWord);
-                }
+        // for (String currentWord : words) {
+        // if (!currentWord.equals(targetWord)) {
+        // if (fuzz.fuzzyScore(targetWord, currentWord) > bestFuzzyScore) {
+        // fuzzyWinner = currentWord;
+        // bestFuzzyScore = fuzz.fuzzyScore(targetWord, currentWord);
+        // }
 
-                if (levenshtein.apply(targetWord, currentWord).getDistance() < bestDistance) {
-                    levenshteinWinner = currentWord;
-                    bestDistance = levenshtein.apply(targetWord, currentWord).getDistance();
-                }
-            }
-            currentWord = br.readLine();
+        // if (levenshtein.apply(targetWord, currentWord).getDistance() < bestDistance)
+        // {
+        // levenshteinWinner = currentWord;
+        // bestDistance = levenshtein.apply(targetWord, currentWord).getDistance();
+        // }
+        // }
+        // }
 
-        }
+        // System.out.println("Closest word using fuzzy algorithm was: " + fuzzyWinner);
+        // System.out.println("Closest word using Levenshtein algorithm was: " +
+        // levenshteinWinner);
 
-        reader.close();
-        br.close();
-
-        System.out.println("Closest word using fuzzy algorithm was: " + fuzzyWinner);
-        System.out.println("Closest word using Levenshtein algorithm was: " + levenshteinWinner);
+        System.out.println(Arrays.toString(getTopFuzzyMatches(words, targetWord, 3)));
+        System.out.println(Arrays.toString(getTopLevenshteinMatches(words, targetWord, 3)));
 
     }
 }
