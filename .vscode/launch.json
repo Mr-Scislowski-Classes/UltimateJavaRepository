@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Topic7_1IntroductionToArrayList",
+            "request": "launch",
+            "mainClass": "Unit07.Topic7_1IntroductionToArrayList",
+            "projectName": "UltimateJavaRepository_9a7d31f3"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
