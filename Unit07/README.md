@@ -20,7 +20,8 @@ enhance for loops cannot modify, get, size of the CURRENT arraylist, only the ot
 ## 7.4 - Developing Algorithms Using `ArrayList`s
 just a review of array and arraylist
 ## 7.5 - Searching
-
+Objects shouldnt use == since it's may not point to the same object
+loops going backward seems to be better
 ## 7.6 - Sorting
 
 ## 7.7 - Ethical Issues Around Data Collection
