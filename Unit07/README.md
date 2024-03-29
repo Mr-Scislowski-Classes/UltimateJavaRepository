@@ -23,5 +23,6 @@ just a review of array and arraylist
 Objects shouldnt use == since it's may not point to the same object
 loops going backward seems to be better
 ## 7.6 - Sorting
-
+I learned about it and talked with Mr. Scislowski
 ## 7.7 - Ethical Issues Around Data Collection
+- Data should not be stored, promote ethical use of data
