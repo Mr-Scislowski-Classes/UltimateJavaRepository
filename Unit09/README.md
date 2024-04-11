@@ -9,7 +9,7 @@ It overides the superclass methods
 ## 9.4 - super Keyword
 super supposed to stands infront
 ## 9.5 - Creating References Using Inheritance Hierarchies
-
+list.add(new Food("something"))
 ## 9.6 - Polymorphism
-
+(subclass)object.method(): down cast
 ## 9.7 - Object Superclass
