@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Scratch",
+            "request": "launch",
+            "mainClass": "Scratch",
+            "projectName": "UltimateJavaRepository_9a7d31f3"
+        },
+        {
+            "type": "java",
             "name": "Topic7_1IntroductionToArrayList",
             "request": "launch",
             "mainClass": "Unit07.Topic7_1IntroductionToArrayList",

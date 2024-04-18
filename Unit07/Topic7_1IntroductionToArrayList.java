@@ -11,6 +11,7 @@ public static void main(String[] args) {
     // a1.add(5);
     // System.out.println(a1);
 
+
     ArrayList<String> a1 = new ArrayList<>();
     a1.add("f");
     a1.add(0, "s");
