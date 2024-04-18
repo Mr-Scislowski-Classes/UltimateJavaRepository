@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Topic10_1Recursion",
+            "request": "launch",
+            "mainClass": "Unit10.Topic10_1Recursion",
+            "projectName": "UltimateJavaRepository_9a7d31f3"
+        },
+        {
+            "type": "java",
             "name": "Scratch",
             "request": "launch",
             "mainClass": "Scratch",
