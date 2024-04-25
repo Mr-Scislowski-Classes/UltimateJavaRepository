@@ -7,3 +7,4 @@ Array[r][c];
 
 grades[grade.length -1][grades[0].length -1];
 ## 8.2 - Transversing 2D Arrays
+Just tranversing, double loop, while
