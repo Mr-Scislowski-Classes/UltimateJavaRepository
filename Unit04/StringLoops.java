@@ -45,54 +45,166 @@ public class StringLoops {
     }
 
     public static String doubleChar(String str) {
-        return "";
+        String result = "";
+        for (int i = 0; i < str.length(); i++){
+            result += str.substring(i,i+1);
+            result += str.substring(i,i+1);
+        }
+        return result;
     }
 
     public static int countCode(String str) {
-        return 0;
+        int count = 0;
+        for (int i=0; i< str.length()-3; i++){
+            if (str.substring(i, i +2).equals("co") && str.substring(i+3, i+4).equals("e")){
+                count++;
+            }
+        }
+        return count;
     }
 
     public static boolean bobThere(String str) {
+        for (int i=0; i< str.length()-2; i++){
+            if (str.substring(i, i +1).equals("b") && str.substring(i+2, i+3).equals("b")){
+                return true;
+            }
+        }
         return false;
     }
 
     public static boolean prefixAgain(String str, int n) {
+        for (int i=n; i < str.length()-n+1; i++){
+            if (str.substring(i, i + n).equals(str.substring(0,n)))
+                return true;
+            }
         return false;
     }
 
     public static boolean sameStarChar(String str) {
-        return false;
+
+        for (int i=1; i< str.length()-1; i++){
+            if(str.substring(i,i+1).equals("*") && !str.substring(i-1,i).equals(str.substring(i+1,i+2)))
+            return false;
+        }
+        return true;
     }
 
     public static String starOut(String str) {
-        return "";
+        String result = "";
+    for (int i = 0; i < str.length(); i++) {
+        if (i == 0 && !str.substring(i, i + 1).equals("*")) {
+            result += str.substring(i, i + 1);
+        }
+        if (i > 0 && !str.substring(i, i + 1).equals("*") && !str.substring(i - 1, i).equals("*")) {
+            result += str.substring(i, i + 1);
+        }
+        if (i > 0 && str.substring(i, i + 1).equals("*") && !str.substring(i - 1, i).equals("*")) {
+            result = result.substring(0, result.length() - 1);
+        }
     }
+
+    return result;
+}
 
     public static int countHi(String str) {
-        return 0;
-    }
+            int count = 0;
+              for (int i = 0; i < str.length() - 1; i++) {
+                  if (str.substring(i, i + 2).equals("hi")) {
+                      count++;
+                  }
+              }
+              return count;
+          }
 
     public static boolean endOther(String a, String b) {
-        return false;
-    }
+            a = a.toLowerCase();
+            b = b.toLowerCase();
+          
+            if (a.length() <= b.length() && b.substring(b.length() - a.length()).equals(a))
+              return true;
+          
+            if (b.length() <= a.length() && a.substring(a.length() - b.length()).equals(b))
+              return true;
+          
+            return false;
+          }
+
+
 
     public static boolean xyBalance(String str) {
-        return false;
-    }
+            for (int i = str.length() - 1; i >= 0; i--) {
+                if (str.charAt(i) == 'y') {
+                    return true;
+                } else if (str.charAt(i) == 'x') {
+                    return false;
+                }
+            }
+        
+            return true;
+        }
+        
 
     public static String plusOut(String str, String word) {
-        return "";
-    }
-
+       if(str.contains(word)){
+        str=str.replace(word,"^");
+        
+         for(int i=0;i<str.length();i++){
+      
+         if(str.charAt(i)!='^')
+        
+            str=str.replace(str.substring(i,i+1),"+");
+}
+}
+        str=str.replace("^",word);
+        return str;
+}
     public static boolean catDog(String str) {
-        return false;
-    }
+            int catcount = 0;
+            int dogcount = 0;
+            for (int i = 0; i < str.length() - 2; i++) {
+                if (str.substring(i, i + 3).equals("cat")) {
+                    catcount++;
+                }
+                if (str.substring(i, i + 3).equals("dog")) {
+                    dogcount++;
+                }
+            }
+            if (dogcount == catcount) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
 
     public static String mixString(String a, String b) {
-        return "";
-    }
+            String result = "";
+              for (int i = 0; i < a.length(); i++) {
+                  result += a.substring(i, i + 1);
+          
+                  for (int j = i; j < b.length(); j++) {
+                      result += b.substring(j, j + 1);
+                      break;  
+                  }
+              }
+            if (a.length() < b.length()){
+              result += b.substring(a.length());
+            }
+              return result;
+          }
 
     public static String repeatSeparator(String word, String sep, int count) {
-        return "";
-    }
+            String result = "";
+                if (count == 1){
+                    return word;
+                } else {
+                    for (int i = 0; i < count; i++){
+                        result += word;
+                        result += sep;
+                    }
+                result = result.substring(0, result.length() - sep.length());
+                 }
+                return result;
+                }
+
 }

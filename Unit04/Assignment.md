@@ -115,11 +115,19 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
 
    ```
 
+<<<<<<< HEAD
+endOther('Hiabc', 'abc') → true
+endOther('AbC', 'HiaBc') → true
+endOther('abc', 'abXabc') → true
+a
+```
+=======
    endOther('Hiabc', 'abc') → true
    endOther('AbC', 'HiaBc') → true
    endOther('abc', 'abXabc') → true
 
    ```
+>>>>>>> 1994328a476559f8ece637e8d5f869b58a577f68
 
 1. [`xyBalance`](https://codingbat.com/prob/p134250)
 

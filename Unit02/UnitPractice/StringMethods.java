@@ -3,35 +3,46 @@ package Unit02.UnitPractice;
 public class StringMethods {
 
     public static String helloName(String name) {
-        return "";
+        String result = "Hello " + name + "!";
+        return result;
     }
 
     public static String firstHalf(String str) {
-        return "";
+       
+        String result = str.substring(0, (int) str.length() /2 );
+        return result;
     }
 
     public static boolean endsLy(String str) {
-        return false;
+        String a = str.substring(str.length() -2, str.length());
+        String b = "ly";
+        boolean c = a.equals(b);
+        return c;
     }
 
     public static String makeAbba(String a, String b) {
-        return "";
+        String result = a + b + b + a;
+        return result;
     }
 
     public static String withoutEnd(String str) {
-        return "";
+        String result = str.substring(1, str.length() -1);
+        return result;
     }
 
     public static String nTwice(String str, int n) {
-        return "";
+        String result = str.substring(0, n) + str.substring(str.length()-n);
+        return result;
     }
 
     public static String makeTags(String tag, String word) {
-        return "";
+        String result = "<" + tag + ">" + word + "</" + tag + ">";
+        return result;
     }
 
     public static String middleTwo(String str) {
-        return "";
+        String result = str.substring(str.length() / 2 -1, str.length()/2 +1);
+        return result;
     }
 
     public static void main(String[] args) {
